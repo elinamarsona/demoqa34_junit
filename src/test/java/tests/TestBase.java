@@ -12,7 +12,7 @@ public class TestBase {
     static void setupConfig() {
         Configuration.pageLoadStrategy = "eager";
         //Configuration.holdBrowserOpen = true;
-
+        //Configuration.timeout = 10000;
     }
 
     @AfterEach

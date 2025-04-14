@@ -14,6 +14,8 @@ public class LoginInPage {
         return new LoginInPage();
     }
 
+
+
     private final SelenideElement username = $("input[name='username']"),
             password = $("input[name='password']"),
             submitBtn = $("#login-button"),
@@ -28,6 +30,12 @@ public class LoginInPage {
         username.setValue(value);
         return this;
     }
+
+    public LoginInPage usernameGet(String value) {
+        username.setValue(value);
+        return this;
+    }
+
     public LoginInPage passwordSet(String value) {
         password.setValue(value);
         return this;
